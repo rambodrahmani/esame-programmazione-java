@@ -1,4 +1,4 @@
-# esame-programmazione-java
+# Esame Programmazione Java
 
 Progetto per l'esame di Programmazione Java, Ingegneria Informatica - Università di Pisa.
 
