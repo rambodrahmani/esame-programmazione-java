@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\renewcommand{\contentsname}{Indice}
+\renewcommand{\refname}{Bibliografia}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{100pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{100pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Progetto Programmazione Java}\\ % Title
+Servizio di Messaggistica Istantanea} % Subtitle
+
+\author{Rambod Rahmani % Author
+\\{\textit{rambodrahmani@autistici.org}}  % Institution
+\\{\textit{Relentlessly pursue knowledge and selflessly share it with others.}}\vspace{3mm}}
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OPEN ACCESS MANIFESTO
+%----------------------------------------------------------------------------------------
+
+Il materiale che troverai in questo documento \`e completamente gratuito. Per quanto riguarda il contenuto, dato che non \`e stato rivisto da "esperti", mi preme precisare che NON garantisco in alcun modo la correttezza totale.\\
+\\
+Il documento \`e rilasciato sotto i termini della licenza Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Italia. Per visionare una copia completa della licenza, visita \\
+http://creativecommons.org/licenses/by-nc-sa/3.0/it/legalcode.\\
+\\
+Lo scopo di tutto ci\`o non \`e tanto arricchire il mio curriculum personale, bens\`i condividere le mie conoscenze con il maggiore numero di persone possibile. Considera questo documento anche come un invito a pubblicare e condividere i tuoi saperi, perch\'e il fondamento di una vera formazione \`e il libero accesso al sapere in tutte le sue forme.\\
+\\
+\begin{center}
+\textit{"Information is power. But like all power, there are those who want to keep it for themselves.\\
+...\\
+Those with access to these resources - students, librarians, scientists - you have been given a privilege.\\
+...\\
+Meanwhile, those who have been locked out are not standing idly by. You have been sneaking through holes and climbing over fences, liberating the information locked up by the publishers and sharing them with your friends. But all of this action goes on in the dark, hidden underground. \textbf{It's called stealing or piracy, as if sharing a wealth of knowledge were the moral equivalent of plundering a ship and murdering its crew.} But sharing isn't immoral - it's a moral imperative. Only those blinded by greed would refuse to let a friend make a copy.\\
+...\\
+There is no justice in following unjust laws. It's time to come into the light and, in the grand tradition of civil disobedience, declare our opposition to this private theft of public culture.\\
+...\\
+With enough of us, around the world, we'll not just send a strong message opposing the privatization of knowledge - we'll make it a thing of the past. Will you join us?"\\}
+\end{center}
+\begin{flushright}
+Guerilla Open Access Manifesto\\
+Aaron Swartz
+\end{flushright}
+
+\afterpage{\blankpage}
+
+\newpage
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+\begin{abstract}
+Il presente documento contiene la documentazione prodotta durante la realizzazione del Progetto "Servizio di Messaggistica Istantanea" per l'esame di "Programmazione Java" - Prof. Mario G.C.A. Cimino - presso l'universit\`a degli studi di Pisa - Ingegneria Informatica.\\
+Il progetto Java \`e disponibile open source su GitHub: \textcolor{blue}{\url{https://github.com/rambodrahmani/esame-programmazione-java}}
+\end{abstract}
+
+\hspace*{3,6mm}\textit{Keywords:} programmazione , java , esame , unipi , rambod , rahmani % Keywords
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+\afterpage{\blankpage}
+
+\newpage
+
+\vspace*{\fill}
+	\begin{center}
+		\begin{em}
+			Dedicato a mia madre Sara, mio padre Magid e mio fratello gemello Ramtin per esserci stati quando ho avuto bisogno e per avermi reso la persona che sono oggi.
+		\end{em}
+	\end{center}
+\vspace*{\fill}
+
+\afterpage{\blankpage}
+
+\newpage
+
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section{Introduzione}
+
+Il progetto che ho sviluppato per l'esame di Programmazione Java \`e un software di messaggistica istantanea che permetto di scambio tra due Client connessi contemporaneamente. Il progetto comprende anche un Server di Log che riceve messaggi di Log, relativi all'utilizzo della GUI, da parte dei vari Client connessi al servizio di messaggistica.\\
+\\
+Il documento si sviluppa secondo le varie fasi di sviluppo del Progetto.\\
+Le fasi di lavoro sono state preimpostate dalle consegne d'esame pubblicate dal professore.\\
+\\
+Il codice sorgente del prodotto e gli altri File prodotti durante lo sviluppo sono disponibili al seguente indirizzo: GitHub - \textcolor{blue}{\url{https://github.com/rambodrahmani/esame-programmazione-java}}
+
+%------------------------------------------------
+
+\newpage
+\section{Analisi}
+
+Il progetto consiste nella realizzazione di un applicativo che permetta lo scambio di messaggi di testo.\\
+\\
+Il progetto \`e composto da:
+\begin{itemize}
+\item \textbf{Server di Log}: che si occupa di ricevere i logs, relativi alla navigazione nell'interfaccia utente, dai Clients. Il Server di Log valida il singolo log XML ricevuto dal Client e lo salva in un file di testo (file di log aperto);
+\item \textbf{Client}: Il client \`e la parte del progetto che permette lo scambio di messaggi di testo. Dotato di interfaccia grafica, permette di visualizzare i Contatti connessi, aprire nuove finestre di conversazione e accedere al diagramma a torta UML.
+\end{itemize}
+
+\subsection{Server di Log}
+
+Il Server di Log non ha interfaccia grafica. Si occupa di ricevere e conservare, su file di testo locale, i vari logs XML dai Clients connessi.\\
+\\
+\textbf{Vista Dinamica}
+\begin{enumerate}
+\item All'avvio, il Server di Log carica da file di configurazione locale i parametri presenti. 
+\item Una volta avviato il Server, l'applicativo rimane in attesa di connessioni da parte dei vari Clients;
+\item Valida i singoli logs XML quando ricevuti dai Clients;
+\item Appende su file di testo locale (file di log aperto) i singoli XML validati;
+\item Alla chiusura, disconnette i vari Clients connessi e termina.
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{File di Configurazione Locale in XML}\\
+All'avvio del sistema, il Server carica dal file di configurazione locale:
+\begin{enumerate}
+\item La porta da utilizzare per avviare il Server;
+\item La locazione del file di Log locale;
+\item La locazione del file XSD da utilizzare per validare i singoli log.
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{Messaggio di Log}\\
+Ogni messaggio di Log contiene:
+\begin{enumerate}
+\item L'indirizzo email del Contatto che lo ha inviato;
+\item Il tipo di evento;
+\item Data e ora dell'invio da parte del Contatto.
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{File di Log di Testo}\\
+Il Sistema riceve e registra un log per i seguenti eventi:
+\begin{enumerate}
+\item Eventi relativi all'utilizzo dell'interfaccia grafica, inviati da parte dei Client.
+\end{enumerate}
+
+\subsection{Client}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+%------------------------------------------------
+
+\newpage
+\section{Progetto}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+\subsection{Server di Log}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+\subsection{Client}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+%------------------------------------------------
+
+\newpage
+\section{Manuale d'uso}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+\subsection{Server di Log}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+\subsection{Client}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\newpage
+\bibliographystyle{unsrt}
+
+\bibliography{progetto_rambod_rahmani}
+
+\nocite{*}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{tjpl}
+D.~Holmes K.~Arnold, J.~Gosling.
+\newblock {\em The Java Programming Language}.
+\newblock Addison-Wesley Professional, 4th edition, 2005.
+
+\bibitem{pij}
+A.~Vecchio G.~Frosini.
+\newblock {\em Programmare in Java Vol. I, II, III}.
+\newblock Edizioni ETS, 2005.
+
+\bibitem{tjse8d}
+{Oracle Corporation}.
+\newblock {The Java SE 8 Documentation}.
+\newblock \url{https://docs.oracle.com/javase/8/}, 2014.
+\newblock Accessed: 2016-05-31.
+
+\bibitem{tjfx2d}
+{Oracle Corporation}.
+\newblock {The Java FX 2 Documentation}.
+\newblock \url{https://docs.oracle.com/javafx/2/}, 2014.
+\newblock Accessed: 2016-05-31.
+
+\bibitem{tjse8a}
+{Oracle Corporation}.
+\newblock {The Java FX 2 API}.
+\newblock \url{https://docs.oracle.com/javase/8/docs/api/}, 2014.
+\newblock Accessed: 2016-05-31.
+
+\bibitem{tjfx2a}
+{Oracle Corporation}.
+\newblock {The Java FX 2 API}.
+\newblock \url{https://docs.oracle.com/javafx/2/api/}, 2014.
+\newblock Accessed: 2016-05-31.
+
+\end{thebibliography}
