@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.4.20)  7 JUN 2016 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.4.20)  8 JUN 2016 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -234,6 +234,31 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count101
+\lst@gtempboxa=\box29
+\lst@token=\toks18
+\lst@length=\count102
+\lst@currlwidth=\dimen112
+\lst@column=\count103
+\lst@pos=\count104
+\lst@lostspace=\dimen113
+\lst@width=\dimen114
+\lst@newlines=\count105
+\lst@lineno=\count106
+\lst@maxwidth=\dimen115
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count107
+\lst@skipnumbers=\count108
+\lst@framebox=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
 (./progetto_rambod_rahmani.aux)
 \openout1 = `progetto_rambod_rahmani.aux'.
 
@@ -272,17 +297,17 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen112
-\scratchbox=\box29
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen113
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count109
+\scratchdimen=\dimen116
+\scratchbox=\box31
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen117
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -298,8 +323,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\big@size=\dimen114
-\AtBeginShipoutBox=\box30
+\big@size=\dimen118
+\AtBeginShipoutBox=\box32
 Package hyperref Info: Link coloring OFF on input line 78.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -308,7 +333,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count107
+\c@section@level=\count115
 )
 LaTeX Info: Redefining \ref on input line 78.
 LaTeX Info: Redefining \pageref on input line 78.
@@ -318,6 +343,7 @@ LaTeX Info: Redefining \nameref on input line 78.
 \@outlinefile=\write3
 \openout3 = `progetto_rambod_rahmani.out'.
 
+\c@lstlisting=\count116
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--91
 
@@ -446,74 +472,225 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--177
  []
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
-LaTeX Warning: Citation `Smith:2012qr' on page 7 undefined on input line 209.
-
-
-LaTeX Warning: Citation `Smith:2013jd' on page 7 undefined on input line 209.
+ []
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 235--240
 
-LaTeX Warning: Citation `Smith:2012qr' on page 8 undefined on input line 216.
+ []
 
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+Underfull \hbox (badness 10000) in paragraph at lines 245--249
 
-LaTeX Warning: Citation `Smith:2013jd' on page 8 undefined on input line 216.
-
-
-LaTeX Warning: Citation `Smith:2012qr' on page 8 undefined on input line 220.
-
-
-LaTeX Warning: Citation `Smith:2013jd' on page 8 undefined on input line 220.
-
-
-LaTeX Warning: Citation `Smith:2012qr' on page 8 undefined on input line 224.
+ []
 
 
-LaTeX Warning: Citation `Smith:2013jd' on page 8 undefined on input line 224.
+Underfull \hbox (badness 10000) in paragraph at lines 255--261
+
+ []
 
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 269--274
 
-LaTeX Warning: Citation `Smith:2012qr' on page 9 undefined on input line 231.
-
-
-LaTeX Warning: Citation `Smith:2013jd' on page 9 undefined on input line 231.
+ []
 
 
-LaTeX Warning: Citation `Smith:2012qr' on page 9 undefined on input line 235.
+Underfull \hbox (badness 10000) in paragraph at lines 279--285
+
+ []
+
+[9] <images/analisi_client.png, id=170, 803.0pt x 1135.24126pt>
+File: images/analisi_client.png Graphic file (type png)
+
+<use images/analisi_client.png>
+Package pdftex.def Info: images/analisi_client.png used on input line 309.
+(pdftex.def)             Requested size: 561.59912pt x 794.00522pt.
+
+Overfull \hbox (89.8686pt too wide) in paragraph at lines 309--309
+[]  [] 
+ []
 
 
-LaTeX Warning: Citation `Smith:2013jd' on page 9 undefined on input line 235.
+LaTeX Warning: Float too large for page by 100.38089pt on input line 309.
+
+[10 <./images/analisi_client.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 314--342
+
+ []
 
 
-LaTeX Warning: Citation `Smith:2012qr' on page 9 undefined on input line 239.
+Underfull \hbox (badness 10000) in paragraph at lines 314--342
+
+ []
 
 
-LaTeX Warning: Citation `Smith:2013jd' on page 9 undefined on input line 239.
+Underfull \hbox (badness 10000) in paragraph at lines 314--342
 
-[9] (./progetto_rambod_rahmani.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--406
+
+ []
+
+[11
+
+
+] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 409--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--422
+
+ []
+
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 426--429
+
+ []
+
+
+LaTeX Warning: Citation `Smith:2012qr' on page 15 undefined on input line 432.
+
+
+LaTeX Warning: Citation `Smith:2013jd' on page 15 undefined on input line 432.
+
+
+LaTeX Warning: Citation `Smith:2012qr' on page 15 undefined on input line 436.
+
+
+LaTeX Warning: Citation `Smith:2013jd' on page 15 undefined on input line 436.
+
+[15] (./progetto_rambod_rahmani.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
  (./progetto_rambod_rahmani.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
 Package rerunfilecheck Info: File `progetto_rambod_rahmani.out' has not changed
 .
-(rerunfilecheck)             Checksum: 3347970745D9F82672115C9A52DE345F;532.
+(rerunfilecheck)             Checksum: BB61271772292E97378BF6D769C2C73F;595.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 453.
  ) 
 Here is how much of TeX's memory you used:
- 7585 strings out of 494977
- 114893 string characters out of 6180183
- 223553 words of memory out of 5000000
- 10570 multiletter control sequences out of 15000+600000
- 39195 words of font info for 131 fonts, out of 8000000 for 9000
+ 9139 strings out of 494977
+ 136592 string characters out of 6180183
+ 269148 words of memory out of 5000000
+ 12010 multiletter control sequences out of 15000+600000
+ 41739 words of font info for 163 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 30i,5n,35p,708b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,6n,40p,708b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/fr33d0mf1ght3r/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk>
  </home/fr33d0mf1ght3r/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/
 usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/te
@@ -522,10 +699,10 @@ st/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on progetto_rambod_rahmani.pdf (13 pages, 106997 bytes).
+Output written on progetto_rambod_rahmani.pdf (19 pages, 198774 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 33873 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 33886 words of extra memory for PDF output out of 35830 (max. 10000000)
 

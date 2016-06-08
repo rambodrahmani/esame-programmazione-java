@@ -24,14 +24,14 @@
 \usepackage[protrusion=true,expansion=true]{microtype} % Better typography
 \usepackage{graphicx} % Required for including pictures
 \usepackage{wrapfig} % Allows in-line images
-
+\renewcommand{\figurename}{Figura} % Modifica del Caption default delle figure
 \usepackage{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Required for accented characters
 \usepackage{afterpage}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{xcolor}
-
+\usepackage{listings}
 \renewcommand{\contentsname}{Indice}
 \renewcommand{\refname}{Bibliografia}
 
@@ -206,29 +206,226 @@ Il Sistema riceve e registra un log per i seguenti eventi:
 
 \subsection{Client}
 
-This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+Il Client ha interfaccia grafica. Permette all’utente di visualizzare i Contatti connessi, aprire nuove conversazioni con questi, inviare e ricevere messaggi ed accedere al diagramma a Torta nella finestra Statistiche.\\
+\\
+\textbf{Vista Dinamica}
+\begin{enumerate}
+\item All'avvio dell'applicativo, il Client legge dal file di configurazione locale i parametri presenti.
+\item Quando l'utente preme il pulsante “Connetti”, il Client si connette al Server di Log e si registra nella Base di Dati con l'email inserita;
+\item Il Client legge da Base di Dati i Contatti connessi e li carica nella Tabella “Contatti”;
+\item Il Client attende le connessioni da parte dei vari Contatti;
+\item A intervalli di tempo determinati, il Client aggiorna la lista Contatti connessi;
+\item Lo stato di connessione viene aggiornato impostando il testo della Stringa “Stato” che si trova sotto la lista dei Contatti;
+\item L'utente può aprire una nuova finestra di conversazione con un Contatto facendo doppio Click sul nome del contatto nella lista Contatti;
+\item La finestra di conversazione aperta permette lo scambio di messaggi con il Contatto selezionato;
+\item L'utente può utilizzare il menu “Strumenti” per accedere alla finestra “Statistiche”;
+\item La finestra statistiche contiene un diagramma a torta che rappresenta le ore di attività dei 5 Contatti più connessi.
+\item Alla chiusura del Client, il Contatto viene rimosso dalla Base di Dati, si disconnette dal Server di Log e termina.
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{File di Configurazione Locale in XML}\\
+All'avvio del sistema, il Client carica dal file di configurazione locale:
+\begin{enumerate}
+\item Indirizzo e porta del Server di Log a cui connettersi;
+\item La porta su cui avviare il Client;
+\item L'indirizzo, la porta, il nome utente e la password da utilizzare per accedere al Database.
+\item Il numero di ultimi messaggi di ciascuna conversazioni da salvare in Cache.
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{Cache Locale}\\
+Alla chiusura di una finestra di conversazione con un Contatto, il Sistema salva su file binario gli ultimi N messaggi scambiati. All'avvio della successiva conversazione con il Contatto, carica dal suddetto file gli ultimi N messaggi.\\
+\\
+\textbf{Base di Dati}\\
+Il Sistema archivia le seguenti informazioni su base di dati:
+\begin{enumerate}
+\item Connessione e disconnessione dei vari Client (email, indirizzo IP, data e ora);
+\item I messaggi inviati dai vari Client (mittente, destinatario, messggio, data e ora).
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{Struttura Tabelle Base di Dati}\\
+\\
+Contatti
+\lstset{language=sql}
+\begin{lstlisting}[frame=single]
+contatti (email, indirizzo_ip, data)
+email: VARCHAR(45), PRIMARY KEY,
+indirizzo_ip: VARCHAR(45),
+data: TIMESTAMP
+\end{lstlisting}
+La tabella Contatti contiene gli indirizzi Email dei vari Clients connessi e l'indirizzo IP a questi associato.\\
+Ogni contatto \`e caratterizzato da un indirizzo Email, da un indirizzo IP e dall'ora in cui si \`e connesso.\\
+Non \`e possibile che due o pi\`e contatti con lo stesso indirizzo Email possano connettersi.\\
+\\
+Messaggi
+\lstset{language=sql}
+\begin{lstlisting}[frame=single]
+messaggi (id, mittente, destinatario, testo, data)
+id: INT(45), PRIMARY KEY,
+mittente: VARCHAR(45),
+destinatario: VARCHAR(45),
+testo: MEDIUMTEXT,
+data: TIMESTAMP
+\end{lstlisting}
+La tabella Messaggi contiene i messaggi scambiati tra i vari Contatti.\\
+Ogni messaggio \`e composto da un id numerico (ho preferito utilizzare una colonna chiave dedicata perch\`e altrimenti si dovrebbe coinvolgere tutte le colonne della tabella per ottenere una chiave univoca), l'indirizzo email del mittente, l'indirizzo email del destinatario, il testo del messaggio e la data e l'ora in cui \`e stato spedito.\\
+\\
+Storico
+\lstset{language=sql}
+\begin{lstlisting}[frame=single]
+storico (email, durata)
+email: VARCHAR(45), PRIMARY KEY,
+durata: DOUBLE
+\end{lstlisting}
+La tabella Storico contiene, per ciascun Client, l'email e il numero di ore spese connesso.
+Viene utilizzata dai vari Clients per generare il diagramma a Torta.\\
+Ogni volta che un Client si disconnette, viene utilizzata la colonna data della tabella contatti per calcolare il numero di ore che il Client \`e rimasto connesso.\\
+\\
+\textbf{File di Log remoto}\\
+Il Sistema invia un log per i seguenti eventi:
+\begin{enumerate}
+\item Quando l'utente preme il pulsante "Connetti" per avviare il Client;
+\item Quando l'utente preme il pulsante "Disconnetti" per fermare il Client;
+\item Quando l'utente accede al menu "Strumenti";
+\item Quando l'utente accede al sotto-menu "Statistiche" (Strumenti → Statistiche) aprendo il frame Statistiche;
+\item Quando l'utente apre una nuova finestra di conversazione con doppio click sulla tabella "Contatti" del Client;
+\item Quando un Client invia un messaggio premendo sul pulsante "Invia" del Frame conversazione.
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{Segue l'interfaccia grafica realizzata per il Client:}
+\afterpage{
+\clearpage
+\begin{figure}
+\vspace{-4.4cm}
+\hspace{-4.0cm}
+\includegraphics[width=1.56\textwidth]{images/analisi_client.png}
+\caption{Interfaccia Grafica Client}
+\end{figure}
+\thispagestyle{empty}
+\clearpage
+}
 
 %------------------------------------------------
 
 \newpage
 \section{Progetto}
 
-This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
-
 \subsection{Server di Log}
 
-This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+Le classi del Server di Log, come mostrate graficamente nel diagramma UML, sono le seguenti:\\
+\\
+\textbf{Classe Server}\\
+Classe contenente la funzione main() del progetto.\\
+Gestisce l'Input/Output da terminale per la gestione (avvio, arresto, stampa logs) del Server di Log.\\
+\\
+\textbf{Classe GestoreParametriConfigurazioneXML}\\
+Legge i parametri di configurazione dal file di configurazione .xml locale.\\
+Valida i parametri tramite XML Schema con file .xsd locale.\\
+\\
+\textbf{Classe ParametriConfigurazione}\\
+Contiene i parametri di configurazione letti dal file di configurazione .xml locale dalla classe GestoreParametriConfigurazioneXML.\\
+Serializzata/Deserializzata tramite XMLStream.\\
+\\
+\textbf{Classe GestoreLogsXML}\\
+Gestisce l'accesso sincronizzato di lettura e scrittura sul file di log .txt locale.\\
+Valida i log ricevuti tramite XML Schema con file .xsd locale.\\
+\\
+\textbf{Classe ThreadServerSocket}\\
+Gestisce il ServerSocket in attesa delle connessioni da parte dei Clients.\\
+Estende Thread.\\
+Inviato alla classe SocketClient.\\
+\\
+\textbf{Classe SocketClient}\\
+Gestisce il Socket di comunicazione tra Server di Log e ciascun client Connesso.\\
+Estende Thread.\\
+\\
+\textbf{Diagramma UML}
 
 \subsection{Client}
 
-This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+Le classi del Client, come mostrate graficamente nel diagramma UML, sono le seguenti:\\
+\\
+\textbf{Classe Client}\\
+Classe contenente la funzione main() del progetto.\\
+Istanzia una variabile di tipo FrameContatti contenente la GUI principale del progetto.\\
+\\
+\textbf{Classe Contatto}\\
+Contiene le informazioni di ciascun contatto connesso.\\
+Utilizzata dalla classe GestoreBaseDiDati per ottenere la lista dei contatti connessi.\\
+\\
+\textbf{Classe FrameContatti}\\
+Contiene il JFrame con la GUI principale (area connessione, lista contatti connessi, menu strumenti).\\
+Istanzia una variabile di tipo ServerSocketConversazioni che avvia un ServerSocket che rimane in ascolto delle connessione da parte degli altri Contatti.\\
+\\
+\textbf{Classe FrameConversazione}\\
+Contiene il JFrame con la GUI della finestra di conversazione.\\
+Istanzia una variabile di tipo SocketConversazione che si connette al  ServerSocketConversazioni del contatto con cui si desidera conversare.\\
+\\
+\textbf{Classe FrameStatistiche}\\
+Contiene il JFrame con la GUI della finestra delle statistiche.\\
+\\
+\textbf{Classe GestoreBaseDiDati}\\
+Esegue tutte le query sulla Base di Dati.\\
+\\
+\textbf{Classe GestoreCacheConversazioni}\\
+Si occupa di salvare e prelevare da file binario locale gli ultimi messaggi scambiati con ciascun Contatto.\\
+\\
+\textbf{Classe GestoreParametriConfigurazioneXML}\\
+Legge i parametri di configurazione dal file di configurazione .xml locale.\\
+Valida i parametri tramite XML Schema con file .xsd locale.\\
+\\
+\textbf{Classe ParametriConfigurazione}\\
+Contiene i parametri di configurazione letti dal file di configurazione .xml locale dalla classe GestoreParametriConfigurazioneXML.\\
+Serializzata/Deserializzata tramite XMLStream.\\
+\\
+\textbf{Classe MessaggioDiLog}\\
+Implementa Serializable.\\
+Contiene i campi di ciascun messaggio di log inviato da Client a Server.\\
+\\
+\textbf{Classe ModelloTabellaContatti}\\
+Estende AbstractTableModel.\\
+Gestisce i dati della tabella contenente la lista dei Contatti connessi.\\
+\\
+\textbf{Classe ServerSocketConversazioni}\\
+Gestisce il ServerSocket in attesa delle connessioni da parte degli altri Contatti.\\
+Estende Thread.\\
+Inviato alla classe SocketConversazione,\\
+\\
+\textbf{Classe SocketConversazione}\\
+Gestisce il Socket di comunicazione tra due Clients connessi che scambiano messaggi.\\
+Estende Thread.\\
+\\
+\textbf{Classe SocketServerDiLog}\\
+Gestisce il Socket di comunicazione con il Server di Log.\\
+Estende Thread.\\
+\\
+\textbf{Classe Storico}\\
+Contiene le informazioni riguardanti il numero di ore di connessione per ciascun Contatto.\\
+Utilizzata dalla classe GestoreBaseDiDati per ottenere la lista delle ore spese connesse per ciascun contatti.\\
+\\
+\textbf{Diagramma UML}
 
+\subsection{Classi Comuni}
+
+Client e Server di Log hanno in comune il package messaggio, che contiene le classi Messaggio e TipoMessaggio, e che verr\`a sviluppato sotto forma di una Java Class Library, in modo da ottenere un .jar da includere nei due progetti che ne necessitano.\\
+Essendo messaggio l'oggetto serializzato che viene scritto e letto da ObjectOutputStream e ObjectInputStream, conviene avere un unico file .jar da includere nel progetto Server e Client in modo da non incorrere in errori di incongruenza.\\
+\\
+\textbf{Classe Messaggio}\\
+Implementa Serializable.\\
+Contiene i campi di ciascun messaggio scambiato tra Server e Client o tra due Clients.\\
+\\
+\textbf{Classe TipoMessaggio}\\
+Implementa Serializable.\\
+Enumerazione contenente i tipi di messaggio che possono essere creati.\\
+\\
+\textbf{Diagramma UML}
 %------------------------------------------------
 
 \newpage
 \section{Manuale d'uso}
 
-This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+Il presente manuale d'uso spiega come utilizzare il Server di Log e il Client del progetto.\\
+\\
+Il Server di Log non ha interfaccia grafica e pu\`o essere gestito utilizzando la linea di comando, mentre il Client ha un'interfaccia grafica composta da differenti JFrame.
 
 \subsection{Server di Log}
 
