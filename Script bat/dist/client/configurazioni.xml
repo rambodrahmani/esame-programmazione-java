@@ -1,0 +1,12 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<!-- configurazioni.xml -->
+<client.ParametriConfigurazione>
+	<portaServerDiLog>8181</portaServerDiLog>
+	<indirizzoIPServerDiLog>192.168.0.12</indirizzoIPServerDiLog>
+	<portaClient>9191</portaClient>
+	<indirizzoIPDatabase>192.168.0.12</indirizzoIPDatabase>
+	<portaDatabase>3306</portaDatabase>
+	<usernameDatabase>program_java</usernameDatabase>
+	<passwordDatabase>ProgrammazioneJava</passwordDatabase>
+	<numUltimiMessaggiCache>10</numUltimiMessaggiCache>
+</client.ParametriConfigurazione>

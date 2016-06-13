@@ -1,0 +1,7 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<!-- configurazioni.xml -->
+<server.ParametriConfigurazione>
+	<portaServer>8181</portaServer>
+	<pathFileDiLog>logs.txt</pathFileDiLog>
+	<pathFileXSDLogs>validaLogs.xsd</pathFileXSDLogs>
+</server.ParametriConfigurazione>
