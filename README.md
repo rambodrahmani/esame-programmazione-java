@@ -2,9 +2,6 @@
 
 Progetto per l'esame di Programmazione Java, Ingegneria Informatica - Università di Pisa.
 
-<<<<<<< HEAD
-Rambod Rahmani <<rambodrahmani@autistici.org>>
-=======
 La repository contiene il materiale prodotto durante lo sviluppo del progetto per l'esame di Programmazione Java.
 
 Il contenuto e' ordinato secondo le fasi di lavoro imposte dalle direttive dell'esame, e ad ogni fase e' stata dedicata una directory.
