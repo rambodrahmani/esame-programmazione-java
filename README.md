@@ -8,4 +8,6 @@ Il contenuto e' ordinato secondo le fasi di lavoro imposte dalle direttive dell'
 Infine e' presente la cartella NetbeansProjects che contiene i progetti sviluppati con Netbeans.
 Sono presenti anche le cartelle "Script bat", contenente uno script bat e i file necessari per compilare il progetto su macchine Windows (si dovra' modificare la locazione dei comandi java, javac e jar perche' funzioni su macchine differenti), e "Script sql", contenente lo script SQL necessario per ricreare il database utilizzato dal progetto.
 
+--
+
 Rambod Rahmani <<rambodrahmani@autistici.org>>
