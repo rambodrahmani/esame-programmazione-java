@@ -48,7 +48,7 @@ public class GestoreLogsXML {
 
     synchronized public boolean registraLogXML(Messaggio m) throws IOException, ParserConfigurationException, SAXException { // 1
         if (validaLogXML(m.getTesto())) {
-            PrintWriter scrittoreFile = new PrintWriter(new BufferedWriter(new FileWriter(pathFileTXTLogs, true)));
+            PrintWriter scrittoreFile = new PrintWriter(new BufferedWriter(new FileWriter(pathFileTXTLogs, true))); // 4
             scrittoreFile.append(m.getTesto() + "\n");
             scrittoreFile.flush();
             return true;
@@ -68,13 +68,13 @@ public class GestoreLogsXML {
     }
 
     synchronized public String leggiLogs() throws FileNotFoundException, IOException { // 3
-        String logsLetti = "";
+        String logsLetti = "\n";
         String linea;
 
         FileReader fileReader = new FileReader(pathFileTXTLogs);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         while ((linea = bufferedReader.readLine()) != null) {
-            logsLetti += linea;
+            logsLetti += linea + "\n";
         }
         bufferedReader.close();
 
@@ -102,4 +102,6 @@ Note:
 (3) Funzione getLogs().
     Legge il file di log (.txt) aperto locale e restituisce una stringa
     contenente tutti i logs presenti in tale file.
+
+(4) https://docs.oracle.com/javase/7/docs/api/java/io/BufferedWriter.html
  */

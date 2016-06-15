@@ -12,21 +12,50 @@ import java.sql.Timestamp;
  *
  * @author Rambod Rahmani <rambodrahmani@autistici.org>
  */
-public class MessaggioDiLog implements Serializable {
+public class MessaggioDiLog implements Serializable { // 0
 
-    private final TipoMessaggioDiLog evento;
-    private final String data;
+    private TipoMessaggioDiLog tipo;
+    private String mittente;
+    private String data;
 
-    public MessaggioDiLog(TipoMessaggioDiLog e) {
-        evento = e;
+    public MessaggioDiLog(TipoMessaggioDiLog t, String m) {
+        tipo = t;
+        mittente = m;
         
         Timestamp timeStampCorrente = new Timestamp(System.currentTimeMillis());
         data = timeStampCorrente.toString();
+    }
+    
+    public void setMittente(String m) {
+        mittente = m;
+    }
+    
+    public String getMittente() {
+        return mittente;
+    }
+    
+    public void setTipo(TipoMessaggioDiLog t) {
+        tipo = t;
+    }
+    
+    public TipoMessaggioDiLog getTipo() {
+        return tipo;
+    }
+    
+    public void setData(String d) {
+        data = d;
+    }
+    
+    public String getData() {
+        return data;
     }
 }
 
 /*
 Note:
-(0) 
-
+(0) Classe MessaggioDiLog.
+    Implementa Serializable.
+    Rappresenta l'oggetto che viene scritto e letto da ObjectOutputStream
+    e ObjectInputStream durante la comunicazione tra Server di Log
+    e Client.
  */

@@ -6,7 +6,6 @@
 package server;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -22,60 +21,74 @@ import messaggio.Messaggio;
  */
 public class ThreadServerSocket extends Thread {
 
-    private static final PrintWriter VIDEO = new PrintWriter(System.out, true);
     private final ServerSocket serverSocket;
-    private final Map clientsConnessi;
+    private static LinkedHashMap<String, SocketClient> clientsConnessi;
+
+    private boolean threadSospeso;
 
     ThreadServerSocket() throws IOException { // 0
         serverSocket = new ServerSocket(GestoreParametriConfigurazioneXML.parametri.portaServer);
-        clientsConnessi = new LinkedHashMap();
+        clientsConnessi = new LinkedHashMap<>();
 
-        start();
+        threadSospeso = false;
     }
 
     @Override
     public void run() { // 1
         try {
             while (true) {
-                Socket aus = serverSocket.accept();
-                new SocketClient(this, aus);
+                synchronized (this) {
+                    while (threadSospeso) {
+                        wait();
+                    }
+                }
+                Socket nuovoSocket = serverSocket.accept();
+                SocketClient nuovoClient = new SocketClient(nuovoSocket);
+                nuovoClient.start();
             }
-        } catch (IOException e) {
-            VIDEO.print("Errore durante l'accettazione di un nuovo Client: " + e.getMessage() + "\n: ");
-            VIDEO.flush();
+        } catch (InterruptedException | IOException ex) {
+            if (!threadSospeso) {
+                Server.VIDEO.print("Errore durante l'accettazione di un nuovo Client: " + ex.getMessage() + "\n: ");
+                Server.VIDEO.flush();
+            }
         }
     }
 
-    public boolean identificaNuovoClient(String email, SocketClient client) { // 2
-        if (clientsConnessi.containsKey(email)) {
-            return false;
+    public static boolean identificaNuovoClient(String email, SocketClient client) { // 2
+        try {
+            if (clientsConnessi.containsKey(email)) {
+                return false;
+            }
+            clientsConnessi.put(email, client);
+        } catch (Exception ex) {
+
         }
-        clientsConnessi.put(email, client);
 
         return true;
     }
 
-    public void registraLogXML(Messaggio m) { // 3
+    public static void registraLogXML(Messaggio m) { // 3
         try {
             if (Server.gestoreLogsXML.registraLogXML(m)) {
-                VIDEO.print("Messaggio di Log da " + m.getMittente() + " registrato.\n: ");
-                VIDEO.flush();
+                Server.VIDEO.print("Messaggio di Log da " + m.getMittente() + " registrato.\n: ");
+                Server.VIDEO.flush();
             }
         } catch (IOException | ParserConfigurationException | SAXException e) {
-            VIDEO.print("Errore durante la registrazione di un Log: " + e.getMessage() + "\n: ");
+            Server.VIDEO.print("Errore durante la registrazione di un Log: " + e.getMessage() + "\n: ");
+            Server.VIDEO.flush();
         }
     }
 
-    public void rimuoviClient(String email) { // 4
+    public static void rimuoviClient(String email) { // 4
         if (clientsConnessi.containsKey(email)) {
             clientsConnessi.remove(email);
         }
-        VIDEO.print("Rimosso Client: " + email + "\n: ");
-        VIDEO.flush();
+        Server.VIDEO.print("Rimosso Client: " + email + "\n: ");
+        Server.VIDEO.flush();
     }
 
     public void fermaServerSocket() throws IOException, InterruptedException { // 5
-        stop();
+        sospendi();
 
         Iterator it = clientsConnessi.entrySet().iterator();
         while (it.hasNext()) {
@@ -86,6 +99,19 @@ public class ThreadServerSocket extends Thread {
         }
 
         serverSocket.close();
+    }
+
+    public Map ottieniListaClientConnessi() { // 6
+        return clientsConnessi;
+    }
+
+    public void sospendi() { // 7
+        threadSospeso = true;
+    }
+
+    synchronized void riprendi() { // 8
+        threadSospeso = false;
+        notify();
     }
 }
 
@@ -120,4 +146,15 @@ Note:
     Client, comunica a tutti i Client connessi l'arresto del Server di Log e 
     li rimuove dalla variabile clientsConnessi chiudendo l'istanza dell'oggetto 
     SocketClient associato a ciascuno.
+
+(6) Funzione ottieniListaClientConnessi().
+    Restitusice la lista dei Client connessi al Server di Log.
+
+(7) Funzione sospendi().
+    Funzione di gestione del Thread. Sospende la ricezione dei messaggi per 
+    il socket in ascolto connesso al Server di Log.
+
+(8) Funzione riprendi().
+    Funzione di gestione del Thread. Riprende la ricezione dei messaggi per
+    il socket in ascolto connesso al Server di Log.
  */

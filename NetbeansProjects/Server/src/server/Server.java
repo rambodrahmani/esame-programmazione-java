@@ -8,7 +8,12 @@ package server;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.util.Enumeration;
 import java.util.InputMismatchException;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Scanner;
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
@@ -19,7 +24,7 @@ import org.xml.sax.SAXException;
  */
 public final class Server {
 
-    private static final PrintWriter VIDEO = new PrintWriter(System.out, true);
+    public static final PrintWriter VIDEO = new PrintWriter(System.out, true);
     private static final Scanner TASTIERA = new Scanner(System.in);
     private ThreadServerSocket threadServerSocket;
     private static GestoreParametriConfigurazioneXML gestoreParametriConfig;
@@ -27,7 +32,7 @@ public final class Server {
 
     Server() { // 1
         caricaConfigurazioni();
-        
+
         try {
             gestoreLogsXML = new GestoreLogsXML();
         } catch (IOException e) {
@@ -36,7 +41,7 @@ public final class Server {
             System.exit(0);
         }
     }
-    
+
     private void caricaConfigurazioni() { // 2
         try {
             gestoreParametriConfig = new GestoreParametriConfigurazioneXML("configurazioni.xml", "configurazioni.xsd");
@@ -51,9 +56,10 @@ public final class Server {
     }
 
     private void avviaServer() { // 3
-        try {            
+        try {
             threadServerSocket = new ThreadServerSocket();
-            VIDEO.println("Server avviato. [" + InetAddress.getLocalHost() + " : " + GestoreParametriConfigurazioneXML.parametri.portaServer + "]");
+            threadServerSocket.start();
+            VIDEO.println("Server avviato. [" + ottieniIndirizzoIP() + " : " + GestoreParametriConfigurazioneXML.parametri.portaServer + "]");
         } catch (IOException e) {
             VIDEO.println("Errore durante l'avvio del Server di Log: " + e.getMessage());
             VIDEO.println("Termino Server di Log.");
@@ -107,19 +113,52 @@ public final class Server {
             VIDEO.print("Errore lettura Logs: " + ex.getMessage() + "\n: ");
             VIDEO.flush();
         }
-        
     }
 
-    private void stampaMenuServer() { // 6
+    private void stampaListaClientConnessi() { // 6
+        if (threadServerSocket != null) {
+            VIDEO.println("\nClient attualmente connessi al Server di Log:");
+            
+            Map clientsConnessi = threadServerSocket.ottieniListaClientConnessi();
+
+            Iterator it = clientsConnessi.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry pair = (Map.Entry) it.next();
+                VIDEO.println(pair.getKey());
+            }
+        } else {
+            VIDEO.println("Server di Log non avviato.");
+        }
+    }
+
+    private void stampaMenuServer() { // 7
         VIDEO.println("\n--------------");
         VIDEO.println("Server di Log");
         VIDEO.println("--------------");
         VIDEO.println("1) Avvia");
         VIDEO.println("2) Stampa logs");
-        VIDEO.println("3) Ferma");
+        VIDEO.println("3) Stampa lista Client connessi");
+        VIDEO.println("4) Ferma");
         VIDEO.println("--------------");
         VIDEO.print(": ");
         VIDEO.flush();
+    }
+    
+    private String ottieniIndirizzoIP() throws SocketException { // 8
+        String indirizzoIP = "";
+        Enumeration e;
+        e = NetworkInterface.getNetworkInterfaces();
+        while (e.hasMoreElements()) {
+            NetworkInterface n = (NetworkInterface) e.nextElement();
+            Enumeration ee = n.getInetAddresses();
+            while (ee.hasMoreElements()) {
+                InetAddress i = (InetAddress) ee.nextElement();
+                indirizzoIP = i.getHostAddress();
+            }
+            break;
+        }
+
+        return indirizzoIP;
     }
 
     /**
@@ -154,6 +193,9 @@ public final class Server {
                     server.stampaLogs();
                     break;
                 case 3:
+                    server.stampaListaClientConnessi();
+                    break;
+                case 4:
                     server.fermaServer();
                     break;
                 default:
@@ -194,6 +236,15 @@ Note:
 (5) stampaLogs().
     Legge il file di log locale e stampare i Logs presenti su terminale.
 
-(6) Funzione stampaMenuServer().
+(6) Funzione stampaListaClientConnessi().
+    Stampa l'elenco dei Client connessi al Server di Log al momento.
+
+(7) Funzione stampaMenuServer().
     Funzione utilizzata dal metodo main per stampare il menu sul terminale.
+
+(8) Funzione ottieniIndirizzoIP().
+    Ottiene l'indirizzo IP associato alla prima interfaccia di rete attiva. Si 
+    puo' cosi' ottenere l'indirizzo IP associato al computer dal router che 
+    gestisce la rete e permettere di eseguire l'applicativo su piu' computer
+    della rete per lo scambio di messaggi.
  */

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.4.20)  8 JUN 2016 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.4.20)  15 JUN 2016 10:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,6 +217,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip44
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count101
+\calc@Bcount=\count102
+\calc@Adimen=\dimen112
+\calc@Bdimen=\dimen113
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count103
+\calc@Cskip=\skip47
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
@@ -233,26 +255,42 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box29
+\AM@toc@title=\toks18
+\c@AM@survey=\count104
+\AM@templatesizebox=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count105
+\float@exts=\toks19
+\float@box=\box31
+\@float@everytoks=\toks20
+\@floatcapt=\box32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count101
-\lst@gtempboxa=\box29
-\lst@token=\toks18
-\lst@length=\count102
-\lst@currlwidth=\dimen112
-\lst@column=\count103
-\lst@pos=\count104
-\lst@lostspace=\dimen113
-\lst@width=\dimen114
-\lst@newlines=\count105
-\lst@lineno=\count106
-\lst@maxwidth=\dimen115
+\lst@mode=\count106
+\lst@gtempboxa=\box33
+\lst@token=\toks21
+\lst@length=\count107
+\lst@currlwidth=\dimen114
+\lst@column=\count108
+\lst@pos=\count109
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count110
+\lst@lineno=\count111
+\lst@maxwidth=\dimen117
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count107
-\lst@skipnumbers=\count108
-\lst@framebox=\box30
+\c@lstnumber=\count112
+\lst@skipnumbers=\count113
+\lst@framebox=\box34
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
@@ -262,26 +300,26 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 (./progetto_rambod_rahmani.aux)
 \openout1 = `progetto_rambod_rahmani.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Info: Redefining \microtypecontext on input line 78.
+LaTeX Info: Redefining \microtypecontext on input line 80.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -297,17 +335,17 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen116
-\scratchbox=\box31
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen117
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count114
+\scratchdimen=\dimen118
+\scratchbox=\box35
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen119
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -323,9 +361,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\big@size=\dimen118
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 78.
+\big@size=\dimen120
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring OFF on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -333,39 +371,39 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count115
+\c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
 
 (./progetto_rambod_rahmani.out) (./progetto_rambod_rahmani.out)
 \@outlinefile=\write3
 \openout3 = `progetto_rambod_rahmani.out'.
 
-\c@lstlisting=\count116
+\c@lstlisting=\count121
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--91
+Underfull \hbox (badness 10000) in paragraph at lines 86--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--91
+Underfull \hbox (badness 10000) in paragraph at lines 86--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--91
+Underfull \hbox (badness 10000) in paragraph at lines 86--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--93
 
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 100.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 102.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
@@ -373,13 +411,13 @@ ination with the same identifier (name{page.1}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.109 \newpage
+l.111 \newpage
                [1]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 110.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 112.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 118.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 120.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 120.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 122.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -388,31 +426,31 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 120.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 122.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 120
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 122
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 120
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 122
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 120
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 122
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 120
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 122
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -426,15 +464,15 @@ Package microtype Info: Loading generic settings for font family
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 \newpage
+l.131 \newpage
                [2] [3]pdfTeX warning (ext4): destination with the same identifi
 er (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.141 \newpage
+l.143 \newpage
                [3]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 143.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 145.
  (./progetto_rambod_rahmani.toc
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
@@ -443,254 +481,824 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 \openout4 = `progetto_rambod_rahmani.toc'.
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 152--158
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--158
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 168.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 170.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 168.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 170.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 172.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 174.
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 209--212
+Underfull \hbox (badness 10000) in paragraph at lines 211--214
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 235--240
+Underfull \hbox (badness 10000) in paragraph at lines 242--247
 
  []
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
+Underfull \hbox (badness 10000) in paragraph at lines 253--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--261
+Underfull \hbox (badness 10000) in paragraph at lines 263--269
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 269--274
+Underfull \hbox (badness 10000) in paragraph at lines 277--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--285
+Underfull \hbox (badness 10000) in paragraph at lines 287--293
 
  []
 
-[9] <images/analisi_client.png, id=170, 803.0pt x 1135.24126pt>
+[9] [10] <images/analisi_client.png, id=184, 803.0pt x 1135.24126pt>
 File: images/analisi_client.png Graphic file (type png)
 
 <use images/analisi_client.png>
-Package pdftex.def Info: images/analisi_client.png used on input line 309.
+Package pdftex.def Info: images/analisi_client.png used on input line 317.
 (pdftex.def)             Requested size: 561.59912pt x 794.00522pt.
 
-Overfull \hbox (89.8686pt too wide) in paragraph at lines 309--309
-[]  [] 
+Overfull \hbox (89.8686pt too wide) in paragraph at lines 317--317
+[]  []
  []
 
 
-LaTeX Warning: Float too large for page by 100.38089pt on input line 309.
+LaTeX Warning: Float too large for page by 114.66093pt on input line 317.
 
-[10 <./images/analisi_client.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 314--342
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--342
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--342
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.317 \newpage
+               <./images/analisi_client.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 322--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--342
+Underfull \hbox (badness 10000) in paragraph at lines 322--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--342
+Underfull \hbox (badness 10000) in paragraph at lines 322--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--342
+Underfull \hbox (badness 10000) in paragraph at lines 322--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--342
+Underfull \hbox (badness 10000) in paragraph at lines 322--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 322--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 322--352
+
+ []
+
+[12
+
+
+] <diagrammi/server.pdf, id=196, 832.10875pt x 1176.395pt>
+File: diagrammi/server.pdf Graphic file (type pdf)
+
+<use diagrammi/server.pdf>
+Package pdftex.def Info: diagrammi/server.pdf used on input line 353.
+(pdftex.def)             Requested size: 832.10672pt x 1176.39215pt.
+File: diagrammi/server.pdf Graphic file (type pdf)
+ <use diagrammi/server.pdf>
+Package pdftex.def Info: diagrammi/server.pdf used on input line 353.
+(pdftex.def)             Requested size: 832.10672pt x 1176.39215pt.
+
+<diagrammi/server.pdf, id=199, page=1, 832.10875pt x 1176.395pt>
+File: diagrammi/server.pdf Graphic file (type pdf)
+
+<use diagrammi/server.pdf, page 1>
+Package pdftex.def Info: diagrammi/server.pdf, page1 used on input line 353.
+(pdftex.def)             Requested size: 832.10672pt x 1176.39215pt.
+File: diagrammi/server.pdf Graphic file (type pdf)
+ <use diagrammi/server.pdf, page 1>
+Package pdftex.def Info: diagrammi/server.pdf, page1 used on input line 353.
+(pdftex.def)             Requested size: 815.46103pt x 1152.85927pt.
+File: diagrammi/server.pdf Graphic file (type pdf)
+
+<use diagrammi/server.pdf, page 1>
+Package pdftex.def Info: diagrammi/server.pdf, page1 used on input line 353.
+(pdftex.def)             Requested size: 815.46103pt x 1152.85927pt.
+File: diagrammi/server.pdf Graphic file (type pdf)
+ <use diagrammi/server.pdf, page 1>
+Package pdftex.def Info: diagrammi/server.pdf, page1 used on input line 353.
+(pdftex.def)             Requested size: 815.46103pt x 1152.85927pt.
+File: diagrammi/server.pdf Graphic file (type pdf)
+
+<use diagrammi/server.pdf, page 1>
+Package pdftex.def Info: diagrammi/server.pdf, page1 used on input line 353.
+(pdftex.def)             Requested size: 815.46103pt x 1152.85927pt.
+ [13
+
+ <./diagrammi/server.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Overfull \hbox (4.54123pt too wide) in paragraph at lines 357--417
+\T1/ppl/m/n/10.95 (-20) Carica i parametri di con-fig-u-razione uti-liz-zando l
+a classe Ge-storeParametriDi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--406
+Underfull \hbox (badness 10000) in paragraph at lines 357--417
 
  []
 
-[11
+[14] [15] <diagrammi/client.pdf, id=215, 2303.60625pt x 1921.1775pt>
+File: diagrammi/client.pdf Graphic file (type pdf)
 
+<use diagrammi/client.pdf>
+Package pdftex.def Info: diagrammi/client.pdf used on input line 418.
+(pdftex.def)             Requested size: 2303.60065pt x 1921.17284pt.
+File: diagrammi/client.pdf Graphic file (type pdf)
+ <use diagrammi/client.pdf>
+Package pdftex.def Info: diagrammi/client.pdf used on input line 418.
+(pdftex.def)             Requested size: 2303.60065pt x 1921.17284pt.
 
-] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 409--422
+<diagrammi/client.pdf, id=218, page=1, 2303.60625pt x 1921.1775pt>
+File: diagrammi/client.pdf Graphic file (type pdf)
+
+<use diagrammi/client.pdf, page 1>
+Package pdftex.def Info: diagrammi/client.pdf, page1 used on input line 418.
+(pdftex.def)             Requested size: 2303.60065pt x 1921.17284pt.
+File: diagrammi/client.pdf Graphic file (type pdf)
+ <use diagrammi/client.pdf, page 1>
+Package pdftex.def Info: diagrammi/client.pdf, page1 used on input line 418.
+(pdftex.def)             Requested size: 2257.51878pt x 1882.74117pt.
+File: diagrammi/client.pdf Graphic file (type pdf)
+
+<use diagrammi/client.pdf, page 1>
+Package pdftex.def Info: diagrammi/client.pdf, page1 used on input line 418.
+(pdftex.def)             Requested size: 2257.51878pt x 1882.74117pt.
+File: diagrammi/client.pdf Graphic file (type pdf)
+ <use diagrammi/client.pdf, page 1>
+Package pdftex.def Info: diagrammi/client.pdf, page1 used on input line 418.
+(pdftex.def)             Requested size: 2257.51878pt x 1882.74117pt.
+File: diagrammi/client.pdf Graphic file (type pdf)
+
+<use diagrammi/client.pdf, page 1>
+Package pdftex.def Info: diagrammi/client.pdf, page1 used on input line 418.
+(pdftex.def)             Requested size: 2257.51878pt x 1882.74117pt.
+ [16
+
+ <./diagrammi/client.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 422--443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--422
+Underfull \hbox (badness 10000) in paragraph at lines 422--443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--422
-
- []
-
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
+Underfull \hbox (badness 10000) in paragraph at lines 422--443
 
  []
 
 
-LaTeX Warning: Citation `Smith:2012qr' on page 15 undefined on input line 432.
+Underfull \hbox (badness 10000) in paragraph at lines 422--443
+
+ []
 
 
-LaTeX Warning: Citation `Smith:2013jd' on page 15 undefined on input line 432.
+Underfull \hbox (badness 10000) in paragraph at lines 422--443
+
+ []
+
+[17] <diagrammi/serverclient.pdf, id=231, 832.10875pt x 957.5775pt>
+File: diagrammi/serverclient.pdf Graphic file (type pdf)
+
+<use diagrammi/serverclient.pdf>
+Package pdftex.def Info: diagrammi/serverclient.pdf used on input line 444.
+(pdftex.def)             Requested size: 832.10672pt x 957.57516pt.
+File: diagrammi/serverclient.pdf Graphic file (type pdf)
+ <use diagrammi/serverclient.pdf>
+Package pdftex.def Info: diagrammi/serverclient.pdf used on input line 444.
+(pdftex.def)             Requested size: 832.10672pt x 957.57516pt.
+
+<diagrammi/serverclient.pdf, id=234, page=1, 832.10875pt x 957.5775pt>
+File: diagrammi/serverclient.pdf Graphic file (type pdf)
+
+<use diagrammi/serverclient.pdf, page 1>
+Package pdftex.def Info: diagrammi/serverclient.pdf, page1 used on input line 4
+44.
+(pdftex.def)             Requested size: 832.10672pt x 957.57516pt.
+File: diagrammi/serverclient.pdf Graphic file (type pdf)
+
+<use diagrammi/serverclient.pdf, page 1>
+Package pdftex.def Info: diagrammi/serverclient.pdf, page1 used on input line 4
+44.
+(pdftex.def)             Requested size: 815.46103pt x 938.41956pt.
+File: diagrammi/serverclient.pdf Graphic file (type pdf)
+
+<use diagrammi/serverclient.pdf, page 1>
+Package pdftex.def Info: diagrammi/serverclient.pdf, page1 used on input line 4
+44.
+(pdftex.def)             Requested size: 815.46103pt x 938.41956pt.
+File: diagrammi/serverclient.pdf Graphic file (type pdf)
+
+<use diagrammi/serverclient.pdf, page 1>
+Package pdftex.def Info: diagrammi/serverclient.pdf, page1 used on input line 4
+44.
+(pdftex.def)             Requested size: 815.46103pt x 938.41956pt.
+File: diagrammi/serverclient.pdf Graphic file (type pdf)
+
+<use diagrammi/serverclient.pdf, page 1>
+Package pdftex.def Info: diagrammi/serverclient.pdf, page1 used on input line 4
+44.
+(pdftex.def)             Requested size: 815.46103pt x 938.41956pt.
+ [18
+
+ <./diagrammi/serverclient.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 450--453
+
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 471--473
+
+ []
+
+<images/server_di_log-1.png, id=252, 545.03625pt x 297.11pt>
+File: images/server_di_log-1.png Graphic file (type png)
+
+<use images/server_di_log-1.png>
+Package pdftex.def Info: images/server_di_log-1.png used on input line 476.
+(pdftex.def)             Requested size: 360.0pt x 196.2428pt.
+
+<images/server_di_log-2.png, id=253, 545.03625pt x 297.11pt>
+File: images/server_di_log-2.png Graphic file (type png)
+
+<use images/server_di_log-2.png>
+Package pdftex.def Info: images/server_di_log-2.png used on input line 485.
+(pdftex.def)             Requested size: 360.0pt x 196.2428pt.
+
+<images/server_di_log-3.png, id=254, 545.03625pt x 297.11pt>
+File: images/server_di_log-3.png Graphic file (type png)
+
+<use images/server_di_log-3.png>
+Package pdftex.def Info: images/server_di_log-3.png used on input line 492.
+(pdftex.def)             Requested size: 360.0pt x 196.2428pt.
+ [20
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.496 \end{center}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.496 \end{center}
+                   <./images/server_di_log-1.png> <./images/server_di_log-2.png
+>] <images/server_di_log-4.png, id=263, 545.03625pt x 297.11pt>
+File: images/server_di_log-4.png Graphic file (type png)
+
+<use images/server_di_log-4.png>
+Package pdftex.def Info: images/server_di_log-4.png used on input line 502.
+(pdftex.def)             Requested size: 360.0pt x 196.2428pt.
+
+<images/server_di_log-5.png, id=264, 545.03625pt x 297.11pt>
+File: images/server_di_log-5.png Graphic file (type png)
+
+<use images/server_di_log-5.png>
+Package pdftex.def Info: images/server_di_log-5.png used on input line 512.
+(pdftex.def)             Requested size: 360.0pt x 196.2428pt.
+
+<images/server_di_log-6.png, id=265, 545.03625pt x 581.17125pt>
+File: images/server_di_log-6.png Graphic file (type png)
+
+<use images/server_di_log-6.png>
+Package pdftex.def Info: images/server_di_log-6.png used on input line 515.
+(pdftex.def)             Requested size: 360.0pt x 383.86685pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--517
+
+ []
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.519 \end{center}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.519 \end{center}
+                   <./images/server_di_log-3.png> <./images/server_di_log-4.png
+>] [22pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.523 \begin{center}
+                     <./images/server_di_log-5.png> <./images/server_di_log-6.p
+ng>] <images/server_di_log-7.png, id=283, 545.03625pt x 248.93pt>
+File: images/server_di_log-7.png Graphic file (type png)
+
+<use images/server_di_log-7.png>
+Package pdftex.def Info: images/server_di_log-7.png used on input line 525.
+(pdftex.def)             Requested size: 360.0pt x 164.41965pt.
+
+<images/server_di_log-8.png, id=284, 545.03625pt x 323.2075pt>
+File: images/server_di_log-8.png Graphic file (type png)
+
+<use images/server_di_log-8.png>
+Package pdftex.def Info: images/server_di_log-8.png used on input line 532.
+(pdftex.def)             Requested size: 360.0pt x 213.48035pt.
+
+<images/server_di_log-9.png, id=285, 545.03625pt x 234.8775pt>
+File: images/server_di_log-9.png Graphic file (type png)
+
+<use images/server_di_log-9.png>
+Package pdftex.def Info: images/server_di_log-9.png used on input line 541.
+(pdftex.def)             Requested size: 360.0pt x 155.1379pt.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.545 \end{center}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.545 \end{center}
+                   <./images/server_di_log-7.png> <./images/server_di_log-8.png
+>] <images/server_di_log-10.png, id=294, 545.03625pt x 234.8775pt>
+File: images/server_di_log-10.png Graphic file (type png)
+
+<use images/server_di_log-10.png>
+Package pdftex.def Info: images/server_di_log-10.png used on input line 548.
+(pdftex.def)             Requested size: 360.0pt x 155.1379pt.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.567 \end{lstlisting}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.567 \end{lstlisting}
+                       <./images/server_di_log-9.png> <./images/server_di_log-1
+0.png>] <images/client-1.png, id=306, 363.3575pt x 616.3025pt>
+File: images/client-1.png Graphic file (type png)
+
+<use images/client-1.png>
+Package pdftex.def Info: images/client-1.png used on input line 572.
+(pdftex.def)             Requested size: 254.70334pt x 431.9989pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--575
+
+ []
+
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.576 \clearpage
+                 <./images/client-1.png>]
+<images/client-2.png, id=315, 363.3575pt x 616.3025pt>
+File: images/client-2.png Graphic file (type png)
+
+<use images/client-2.png>
+Package pdftex.def Info: images/client-2.png used on input line 580.
+(pdftex.def)             Requested size: 254.70334pt x 431.9989pt.
+
+<images/client-18.png, id=316, 573.14125pt x 113.42375pt>
+File: images/client-18.png Graphic file (type png)
+
+<use images/client-18.png>
+Package pdftex.def Info: images/client-18.png used on input line 588.
+(pdftex.def)             Requested size: 360.0pt x 71.24445pt.
+ [26
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.590 \clearpage
+                 <./images/client-2.png> <./images/client-18.png>]
+<images/client-3.png, id=324, 363.3575pt x 616.3025pt>
+File: images/client-3.png Graphic file (type png)
+
+<use images/client-3.png>
+Package pdftex.def Info: images/client-3.png used on input line 593.
+(pdftex.def)             Requested size: 254.70334pt x 431.9989pt.
+ [27
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.597 \clearpage
+                 <./images/client-3.png>]
+<images/client-4.png, id=331, 363.3575pt x 616.3025pt>
+File: images/client-4.png Graphic file (type png)
+
+<use images/client-4.png>
+Package pdftex.def Info: images/client-4.png used on input line 600.
+(pdftex.def)             Requested size: 191.02612pt x 323.9978pt.
+ <images/client-5.png, id=332, 453.695pt x 369.38pt>
+File: images/client-5.png Graphic file (type png)
+
+<use images/client-5.png>
+Package pdftex.def Info: images/client-5.png used on input line 603.
+(pdftex.def)             Requested size: 216.0022pt x 175.85748pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--605
+
+ []
+
+[28
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.607 \clearpage
+                 <./images/client-4.png> <./images/client-5.png>]
+<images/client-6.png, id=341, 453.695pt x 369.38pt>
+File: images/client-6.png Graphic file (type png)
+ <use images/client-6.png>
+Package pdftex.def Info: images/client-6.png used on input line 612.
+(pdftex.def)             Requested size: 227.62204pt x 185.3208pt.
+
+<images/client-6-1.png, id=342, 453.695pt x 367.3725pt>
+File: images/client-6-1.png Graphic file (type png)
+
+<use images/client-6-1.png>
+Package pdftex.def Info: images/client-6-1.png used on input line 612.
+(pdftex.def)             Requested size: 227.62204pt x 184.31361pt.
+
+<images/client-7.png, id=343, 453.695pt x 369.38pt>
+File: images/client-7.png Graphic file (type png)
+ <use images/client-7.png>
+Package pdftex.def Info: images/client-7.png used on input line 614.
+(pdftex.def)             Requested size: 227.62204pt x 185.3208pt.
+
+Overfull \hbox (64.41908pt too wide) in paragraph at lines 610--616
+[]  []
+ []
+
+[29
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.618 \clearpage
+                 <./images/client-6.png> <./images/client-6-1.png> <./images/cl
+ient-7.png>] <images/client-8.png, id=352, 453.695pt x 369.38pt>
+File: images/client-8.png Graphic file (type png)
+
+<use images/client-8.png>
+Package pdftex.def Info: images/client-8.png used on input line 623.
+(pdftex.def)             Requested size: 227.62204pt x 185.3208pt.
+ <images/client-9.png, id=353, 453.695pt x 369.38pt>
+File: images/client-9.png Graphic file (type png)
+
+<use images/client-9.png>
+Package pdftex.def Info: images/client-9.png used on input line 623.
+(pdftex.def)             Requested size: 227.62204pt x 185.3208pt.
+
+Overfull \hbox (64.41908pt too wide) in paragraph at lines 621--626
+[]  []
+ []
+
+<images/client-10.png, id=354, 959.585pt x 113.42375pt>
+File: images/client-10.png Graphic file (type png)
+
+<use images/client-10.png>
+Package pdftex.def Info: images/client-10.png used on input line 630.
+(pdftex.def)             Requested size: 431.9989pt x 51.0627pt.
+
+<images/client-11.png, id=355, 453.695pt x 369.38pt>
+File: images/client-11.png Graphic file (type png)
+
+<use images/client-11.png>
+Package pdftex.def Info: images/client-11.png used on input line 633.
+(pdftex.def)             Requested size: 216.0022pt x 175.85748pt.
+
+Overfull \hbox (71.9989pt too wide) in paragraph at lines 630--635
+[][] 
+ []
 
 
-LaTeX Warning: Citation `Smith:2012qr' on page 15 undefined on input line 436.
+Underfull \hbox (badness 10000) in paragraph at lines 630--635
+
+ []
+
+[30
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.637 \clearpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.17}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.637 \clearpage
+                 <./images/client-8.png> <./images/client-9.png> <./images/clie
+nt-10.png> <./images/client-11.png>]
+<images/client-12.png, id=366, 604.2575pt x 615.29875pt>
+File: images/client-12.png Graphic file (type png)
+
+<use images/client-12.png>
+Package pdftex.def Info: images/client-12.png used on input line 641.
+(pdftex.def)             Requested size: 360.0pt x 366.58142pt.
+
+<images/client-17.png, id=367, 672.5125pt x 113.42375pt>
+File: images/client-17.png Graphic file (type png)
+
+<use images/client-17.png>
+Package pdftex.def Info: images/client-17.png used on input line 647.
+(pdftex.def)             Requested size: 360.0pt x 60.71657pt.
+ [31
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.651 \clearpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.651 \clearpage
+                 <./images/client-12.png> <./images/client-17.png>]
+<images/client-13.png, id=376, 363.3575pt x 616.3025pt>
+File: images/client-13.png Graphic file (type png)
+
+<use images/client-13.png>
+Package pdftex.def Info: images/client-13.png used on input line 656.
+(pdftex.def)             Requested size: 227.62204pt x 386.0815pt.
+
+<images/client-14.png, id=377, 363.3575pt x 616.3025pt>
+File: images/client-14.png Graphic file (type png)
+
+<use images/client-14.png>
+Package pdftex.def Info: images/client-14.png used on input line 656.
+(pdftex.def)             Requested size: 227.62204pt x 386.0815pt.
+
+Overfull \hbox (64.41908pt too wide) in paragraph at lines 654--658
+[]  []
+ []
 
 
-LaTeX Warning: Citation `Smith:2013jd' on page 15 undefined on input line 436.
+Overfull \hbox (5.04448pt too wide) in paragraph at lines 652--659
+[]\T1/ppl/m/n/10.95 (-20) Utilizzando il pul-sante "Dis-con-netti" è pos-si-bil
+e dis-con-net-tersi dal servizio
+ []
 
-[15] (./progetto_rambod_rahmani.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
+<images/client-16.png, id=378, 325.215pt x 113.42375pt>
+File: images/client-16.png Graphic file (type png)
+
+<use images/client-16.png>
+Package pdftex.def Info: images/client-16.png used on input line 662.
+(pdftex.def)             Requested size: 180.0pt x 62.77957pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--671
+
+ []
+
+[32
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.671 \begin{center}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.21}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.671 \begin{center}
+                     <./images/client-13.png> <./images/client-14.png> <./image
+s/client-16.png>] <images/script_bat-1.PNG, id=388, 509.65407pt x 257.46187pt>
+File: images/script_bat-1.PNG Graphic file (type png)
+
+<use images/script_bat-1.PNG>
+Package pdftex.def Info: images/script_bat-1.PNG used on input line 674.
+(pdftex.def)             Requested size: 360.0pt x 181.86813pt.
+
+<images/script_bat-2.PNG, id=389, 509.65407pt x 257.46187pt>
+File: images/script_bat-2.PNG Graphic file (type png)
+
+<use images/script_bat-2.PNG>
+Package pdftex.def Info: images/script_bat-2.PNG used on input line 682.
+(pdftex.def)             Requested size: 360.0pt x 181.86813pt.
+
+<images/script_bat-3.PNG, id=390, 509.65407pt x 257.46187pt>
+File: images/script_bat-3.PNG Graphic file (type png)
+
+<use images/script_bat-3.PNG>
+Package pdftex.def Info: images/script_bat-3.PNG used on input line 690.
+(pdftex.def)             Requested size: 360.0pt x 181.86813pt.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.22
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.694 \end{center}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.23}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.694 \end{center}
+                   <./images/script_bat-1.PNG> <./images/script_bat-2.PNG>]
+<images/script_bat-4.PNG, id=399, 275.52937pt x 467.49657pt>
+File: images/script_bat-4.PNG Graphic file (type png)
+
+<use images/script_bat-4.PNG>
+Package pdftex.def Info: images/script_bat-4.PNG used on input line 699.
+(pdftex.def)             Requested size: 180.0pt x 305.42426pt.
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.24
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.709 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.25}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.709 \newpage
+               <./images/script_bat-3.PNG> <./images/script_bat-4.PNG>]
+(./progetto_rambod_rahmani.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 718.
+ [35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 718.
  (./progetto_rambod_rahmani.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 718.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 718.
 Package rerunfilecheck Info: File `progetto_rambod_rahmani.out' has not changed
 .
-(rerunfilecheck)             Checksum: BB61271772292E97378BF6D769C2C73F;595.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 453.
+(rerunfilecheck)             Checksum: 9CC8786630653B4B5606BF06D47AA04B;655.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 718.
  ) 
 Here is how much of TeX's memory you used:
- 9139 strings out of 494977
- 136592 string characters out of 6180183
- 269148 words of memory out of 5000000
- 12010 multiletter control sequences out of 15000+600000
- 41739 words of font info for 163 fonts, out of 8000000 for 9000
+ 10237 strings out of 494977
+ 154296 string characters out of 6180183
+ 289686 words of memory out of 5000000
+ 12966 multiletter control sequences out of 15000+600000
+ 43032 words of font info for 175 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 30i,6n,40p,708b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,19n,48p,588b,1129s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/fr33d0mf1ght3r/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk>
  </home/fr33d0mf1ght3r/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/
 usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/te
@@ -699,10 +1307,10 @@ st/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on progetto_rambod_rahmani.pdf (19 pages, 198774 bytes).
+Output written on progetto_rambod_rahmani.pdf (38 pages, 3720429 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 88 named destinations out of 1000 (max. 500000)
- 33886 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 34114 words of extra memory for PDF output out of 35830 (max. 10000000)
 

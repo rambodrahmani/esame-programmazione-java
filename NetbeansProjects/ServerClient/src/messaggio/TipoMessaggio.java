@@ -14,6 +14,7 @@ import java.io.Serializable;
 public enum TipoMessaggio implements Serializable { // 0
     MESSAGGIO_NORMALE,
     MESSAGGIO_LOG,
+    MESSAGGIO_HEARTBEAT,
     IDENTIFICAZIONE_CLIENT,
     IDENTIFICAZIONE_CLIENT_FALLITA,
     CLIENT_DISCONNESSO,

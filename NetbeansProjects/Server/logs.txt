@@ -1,0 +1,300 @@
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:06:13.935</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:07:00.361</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:07:13.574</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STATISTICHE</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:07:15.052</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:07:24.013</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STATISTICHE</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:07:24.849</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:07:46.275</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:08:21.045</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:08:50.683</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:09:05.356</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:09:48.249</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:09:50.212</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:09:52.289</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:09:54.135</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:09:56.468</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:09:58.204</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:10:00.295</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:10:02.859</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:10:04.926</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:10:09.385</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 08:10:11.459</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:10:16.412</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:12:46.951</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:12:58.711</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STATISTICHE</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:12:59.835</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_DISCONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:13:39.34</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:13:46.423</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:14:40.36</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:26:08.903</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:26:09.955</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STATISTICHE</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 08:26:10.612</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente20@prova.com</mittente>
+  <data>2016-06-12 08:26:46.371</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente20@prova.com</mittente>
+  <data>2016-06-12 08:26:47.772</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STATISTICHE</tipo>
+  <mittente>utente20@prova.com</mittente>
+  <data>2016-06-12 08:26:48.39</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>proviamo@andiamo.com</mittente>
+  <data>2016-06-12 12:32:48.528</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 14:04:25.407</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 14:04:44.814</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente666@prova.com</mittente>
+  <data>2016-06-12 14:05:15.559</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 14:05:29.587</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 14:05:32.666</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:43:10.931</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:43:11.837</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 15:43:31.995</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:43:38.431</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:43:42.853</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 15:43:51.302</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:43:55.04</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STATISTICHE</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:43:57.057</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 15:44:41.404</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STRUMENTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 15:44:42.367</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_MENU_STATISTICHE</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 15:44:42.909</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente1@prova.com</mittente>
+  <data>2016-06-12 15:45:16.582</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:45:27.744</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente99@prova.com</mittente>
+  <data>2016-06-12 15:45:29.838</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 15:46:45.053</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 15:46:48.729</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente2@prova.com</mittente>
+  <data>2016-06-12 15:46:51.143</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_CONNETTI</tipo>
+  <mittente>utente9999@prova.com</mittente>
+  <data>2016-06-12 15:47:01.463</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>DOPPIO_CLICK_LISTA_CONTATTI</tipo>
+  <mittente>utente9999@prova.com</mittente>
+  <data>2016-06-12 15:47:02.932</data>
+</messaggio.MessaggioDiLog>
+<messaggio.MessaggioDiLog>
+  <tipo>CLICK_PULSANTE_INVIA</tipo>
+  <mittente>utente9999@prova.com</mittente>
+  <data>2016-06-12 15:47:05.213</data>
+</messaggio.MessaggioDiLog>

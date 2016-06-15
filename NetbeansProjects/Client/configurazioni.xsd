@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+   <xs:element name="client.ParametriConfigurazione">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="portaServerDiLog" type="xs:int" minOccurs="1" nillable="false">
+            </xs:element>
+            <xs:element name="indirizzoIPServerDiLog" minOccurs="1" nillable="false">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="portaClient" type="xs:int" minOccurs="1" nillable="false">
+            </xs:element>
+            <xs:element name="indirizzoIPDatabase" minOccurs="1" nillable="false">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="portaDatabase" type="xs:int" minOccurs="1" nillable="false">
+            </xs:element>
+            <xs:element name="usernameDatabase" minOccurs="1" nillable="false">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="passwordDatabase" minOccurs="1" nillable="false">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="numUltimiMessaggiCache" type="xs:int" minOccurs="1" nillable="false">
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

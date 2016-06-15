@@ -8,7 +8,6 @@ package server;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
 import java.net.Socket;
 import messaggio.Messaggio;
 import messaggio.TipoMessaggio;
@@ -19,72 +18,75 @@ import messaggio.TipoMessaggio;
  */
 public class SocketClient extends Thread {
 
-    private static final PrintWriter VIDEO = new PrintWriter(System.out, true);
-    private String emailContatto;
-    private final ThreadServerSocket threadServerSocket;
+    private String emailClient;
     private final Socket so;
     private final ObjectInputStream ingresso;
     private final ObjectOutputStream uscita;
 
-    SocketClient(ThreadServerSocket tServerSocket, Socket s) throws IOException { // 0
-        threadServerSocket = tServerSocket;
+    private boolean threadSospeso;
+
+    SocketClient(Socket s) throws IOException { // 0
         so = s;
         ingresso = new ObjectInputStream(so.getInputStream());
         uscita = new ObjectOutputStream(so.getOutputStream());
 
-        start();
+        threadSospeso = false;
     }
 
     @Override
     public void run() { // 1
         try {
-            boolean continua = true;
-            while (continua) {
+            while (true) {
+                synchronized (this) {
+                    while (threadSospeso) {
+                        wait();
+                    }
+                }
                 Messaggio messaggioRicevuto = (Messaggio) ingresso.readObject();
                 if (null != messaggioRicevuto.getTipo()) {
                     switch (messaggioRicevuto.getTipo()) {
                         case IDENTIFICAZIONE_CLIENT:
-                            emailContatto = messaggioRicevuto.getTesto();
-                            if (threadServerSocket.identificaNuovoClient(emailContatto, this)) {
-                                VIDEO.print("Identificato nuovo Client: " + emailContatto + "\n: ");
-                                VIDEO.flush();
+                            emailClient = messaggioRicevuto.getTesto();
+                            if (ThreadServerSocket.identificaNuovoClient(emailClient, this)) {
+                                Server.VIDEO.print("Identificato nuovo Client: " + emailClient + "\n: ");
+                                Server.VIDEO.flush();
                             } else {
-                                VIDEO.print("Identificato Client: " + emailContatto + " fallita. Un altro Client con lo stesso indirizzo email e' attualmente connesso.\n: ");
-                                VIDEO.flush();
+                                Server.VIDEO.print("Identificazione Client " + emailClient + " fallita. Un altro Client con lo stesso indirizzo email e' attualmente connesso.\n: ");
+                                Server.VIDEO.flush();
                                 inviaMessaggio(TipoMessaggio.IDENTIFICAZIONE_CLIENT_FALLITA, "Identificazione fallita. Indirizzo Email in uso.");
                                 terminaSocket();
                             }
                             break;
                         case CLIENT_DISCONNESSO:
-                            emailContatto = messaggioRicevuto.getTesto();
-                            threadServerSocket.rimuoviClient(emailContatto);
-                            continua = false;
+                            emailClient = messaggioRicevuto.getTesto();
+                            ThreadServerSocket.rimuoviClient(emailClient);
+                            terminaSocket();
                             break;
                         case MESSAGGIO_LOG:
-                            threadServerSocket.registraLogXML(messaggioRicevuto);
+                            ThreadServerSocket.registraLogXML(messaggioRicevuto);
                             break;
                         default:
                             break;
                     }
                 }
             }
-
-            so.close();
-        } catch (IOException | ClassNotFoundException e) {
-            VIDEO.print("Errore durante la comunicazione con il Client: " + e.getMessage() + "\n: ");
-            VIDEO.flush();
-            threadServerSocket.rimuoviClient(emailContatto);
+        } catch (InterruptedException | IOException | ClassNotFoundException ex) {
+            if (!threadSospeso) {
+                Server.VIDEO.print("Errore durante la comunicazione con il Client: " + ex.getMessage() + "\n: ");
+                Server.VIDEO.flush();
+            }
+            ThreadServerSocket.rimuoviClient(emailClient);
             terminaSocket();
         }
     }
 
     private boolean inviaMessaggio(TipoMessaggio tipo, String testo) { // 2
         try {
-            Messaggio messaggio = new Messaggio(tipo, "Server di Log", emailContatto, testo);
+            Messaggio messaggio = new Messaggio(tipo, "Server di Log", emailClient, testo);
             uscita.writeObject(messaggio);
         } catch (IOException e) {
-            VIDEO.print("Errore durante l'invio del messaggio al Client: " + e.getMessage() + "\n: ");
-            VIDEO.flush();
+            System.out.println("Errore durante l'invio del messaggio al Client: " + e.getMessage() + "\n: ");
+            Server.VIDEO.flush();
             return false;
         }
 
@@ -94,30 +96,38 @@ public class SocketClient extends Thread {
     public void disconnetti() { // 3
         try {
             if (so != null) {
-                stop();
-
                 if (inviaMessaggio(TipoMessaggio.SERVER_LOG_ARRESTATO, "Server Fermato")) {
+                    sospendi();
                     ingresso.close();
                     uscita.close();
                     so.close();
                 }
             }
         } catch (IOException e) {
-            VIDEO.print("Errore durante la disconnessione del Client: " + e.getMessage() + "\n: ");
-            VIDEO.flush();
+            Server.VIDEO.print("Errore durante la disconnessione del Client: " + e.getMessage() + "\n: ");
+            Server.VIDEO.flush();
         }
     }
 
     private void terminaSocket() { // 4
         try {
             if (so != null) {
-                stop();
+                sospendi();
                 ingresso.close();
                 uscita.close();
                 so.close();
             }
         } catch (IOException e) {
         }
+    }
+
+    public void sospendi() { // 5
+        threadSospeso = true;
+    }
+
+    synchronized void riprendi() { // 6
+        threadSospeso = false;
+        notify();
     }
 }
 
@@ -152,4 +162,12 @@ Note:
     Utilizzato per terminare Socket, ObjectInputStream, e ObjectOutputStream 
     per il Client a cui e' associato. Viene utilizzata in caso di errori
     durante la comunicazione con il Client.
+
+(5) Funzione sospendi().
+    Funzione di gestione del Thread. Sospende la ricezione dei messaggi per 
+    il socket in ascolto connesso al Server di Log.
+
+(6) Funzione riprendi().
+    Funzione di gestione del Thread. Riprende la ricezione dei messaggi per
+    il socket in ascolto connesso al Server di Log.
  */
